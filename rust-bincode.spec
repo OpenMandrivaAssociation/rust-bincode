@@ -4,7 +4,7 @@
 %global crate bincode
 
 Name:           rust-%{crate}
-Version:        1.3.2
+Version:        1.3.3
 Release:        1
 Summary:        Binary serialization / deserialization strategy that uses Serde
 
@@ -17,8 +17,6 @@ Source:         %{crates_source}
 # Fortunately rust-serde-bytes is used only in tests, so removing
 # it is non-fatal.
 Patch0:		bincode-1.3.2-drop-circular-dependency.patch
-# Don't insist on rust-byteorder < 1.4.0
-Patch1:		bincode-1.3.2-allow-byteorder-1.4.x.patch
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
