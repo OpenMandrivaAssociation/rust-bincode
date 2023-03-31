@@ -5,7 +5,7 @@
 
 Name:           rust-%{crate}
 Version:        1.3.3
-Release:        1
+Release:        2
 Summary:        Binary serialization / deserialization strategy that uses Serde
 
 # Upstream license specification: MIT
